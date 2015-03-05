@@ -5,7 +5,7 @@
     margin-left: 5%;
     font-size: 30px;
 }
-.search {
+.searchbar {
     padding: 20%;
     margin-left: 5%;
     font-family: sans-serif;
@@ -99,12 +99,47 @@ input[type=password]{
     color: #000000;
 }
 
-body{
-    background-image: url(http://i103.photobucket.com/albums/m133/Merel_Theisen/english-garden_zpsnkzctbpw.jpg);
+body.homepage{
+    background-image: url(http://i103.photobucket.com/albums/m133/Merel_Theisen/english-garden_zpsnkzctbpw.jpg) !important;
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
+body.search{
+    background-image: none;
+}
+
+body.search .searchbar{
+    padding: 0;   
+}
+
+.unsuccessful{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 25%;
+}
+
+.successful{
+     margin-left: 30%;
+     margin-bottom: 10%;
+}
+
+.gardenerphoto{
+    margin-top: 5%;
+    font-size: 36px;
+    margin-right: 5%; 
+}
+
+.gardenerdetails{
+    margin-top: -8%;
+    margin-left: 12%;
+}
+
+.rating{
+    margin-left: 55%;
+    margin-top: -6%;
+}
 
 #lean_overlay {
     position: fixed;
