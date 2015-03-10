@@ -215,7 +215,7 @@ body.search .searchbar{
 .user_login input[type="checkbox"]+label {float:left;}
 
 .user_login .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
-.forgot_password {display:block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color:#ED6347;}
+.forgot_password {display:inline; margin-top: 2%; overflow: hidden; text-decoration: none; color:#ED6347;}
 
 /* User Register Form */
 .user_register {display: none;}
