@@ -210,7 +210,25 @@ body.search .searchbar{
     float: left;
 }
 
+#contact-information.gardener {
+    margin-left: 10%;
+    margin-top: -4%;
+}
 
+#average-rating{
+    margin-left: 10%;
+    margin-top: -4%;
+}
+
+#gardeners-photos{
+
+}
+
+#gardeners-calendar{
+    margin-right: 20%;
+    margin-top: -6%;
+    float: right;
+}
 
 .profile-photo, .profile-name {
     position: relative;
@@ -249,7 +267,7 @@ h1 {
 .gardener-profile-name {
     font-size: 200%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 10%;
     width: 300px;
 }
 
@@ -268,7 +286,7 @@ h1 {
 
 .gardener-services-list, .gardener-services-list {
     float: left;
-    margin-left: 5px;
+    margin-left: 1.5%;
     margin-right: 5px;
     margin-bottom: 5px;
 }
