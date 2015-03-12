@@ -129,6 +129,10 @@ body.search .searchbar{
     padding: 0;   
 }
 
+.customer{
+    text-align: center;
+}
+
 .unsuccessful{
     text-align: center;
     font-size: 20px;
