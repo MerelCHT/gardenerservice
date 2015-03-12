@@ -145,8 +145,9 @@ body.search .searchbar{
 }
 
 .successful{
-     margin-left: 30%;
+     margin-left: 10%;
      margin-bottom: 10%;
+
 }
 
 .gardenerphoto{
@@ -276,6 +277,10 @@ h1 {
     width: 100%;
 }
 
+.gardener-block a{
+    color: inherit;
+}
+
 .gardener-services {
     float: left;
     margin-left: 5px;
@@ -303,6 +308,12 @@ h1 {
     float: left;
     margin-left: 5px;
     margin-bottom: 5px;
+    color: #FFD633;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+.rating.star{
     color: #FFD633;
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
