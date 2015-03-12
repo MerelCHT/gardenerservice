@@ -181,6 +181,129 @@ body.search .searchbar{
     margin:5%;
 }
 
+.container {
+    border-spacing: 1em;
+}
+
+#settingsicon {
+    position: relative;
+    float: right;
+    margin-right: 1em;
+}
+
+#signouticon {
+    position: relative;
+    float: right;
+}
+
+#contact-information {
+    width: 200px;
+    position: relative;
+    float: left;
+}
+
+.search  {
+    width: 45%;
+}
+
+.profile-photo, .profile-name {
+    position: relative;
+    float: left;
+}
+
+.profile-name, .message-icon, #contact-information {
+    margin-left: 20px;
+}
+
+.gardener-photo {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.gardener-name {
+    float: left;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+h1 {
+    width: 300px;
+}
+
+.gardener-profile-info, .country-info, .customer-review {
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.gardener-profile-name {
+    font-size: 200%;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.gardener-block, .customer-block {
+    float: left;
+    width: 100%;
+}
+
+.gardener-services {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.gardener-services-list, .gardener-services-list {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.ratings-title {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.star {
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #FFD633;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+#gardener-wall {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#name-and-info {
+    width: 50%;
+    float: left;
+}
+
+#services-list {
+    width: 20%;
+    float: left;
+}
+
+#ratings-list {
+    width: 17%;
+    float: left;
+}
+
 
 .one_half {width:50%; display: block; float:left;}
 .one_half.last {width:45%; margin-left:5%;}
