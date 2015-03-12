@@ -18,120 +18,129 @@
 <body>
 	<div class="container">	
 		<div class="container">
-			<a>
-				<i class="fa fa-home fa-2x"></i>
-				<i id="signouticon" class="fa fa-sign-out fa-2x"></i>
-				<i id="settingsicon" class="fa fa-cog fa-2x"></i>
-			</a>
+			<div class="home">	
+				<a href="loggedin.html"><i class="fa fa-home"></i></a>
+			</div>			
+
+			<div class="logIn" id="username">
+				<a href="customer.html">Evana Smith &nbsp;&nbsp;&nbsp;</a>
+				<a href="#"><i class="fa fa-cog" style="font-size:25px;"></i>&nbsp;&nbsp;&nbsp;</a>	
+				<a href="homepage.html" class="btn btn-default">Log out</a></div>
+			</div>
 		</div>
-		<div class="container">
+
+
+		<div class="profile">
+		<div class="searchbar">
 				<input placeholder="I'm looking for..." type="text">
 				in
 				<input placeholder="Location" type="text">
 				<a href="successfulsearch.html"><button type="button" class="btn btn-default"><i class="fa fa-search"></i> </button> </a>
 		</div>
-		<div class="container">
-			<img class="profile-photo" src="img/gardener.png" style="width:100px; height:100px">
-			<h1 class="gardener-profile-name">Bill Jackson</h1>
-			<div class="gardener-services-list">
-				Lawn Mowing, Hedge Cutting <br> London, UK
-			</div>
-			<!-- <b class="gardener-name">Bill Jackson</b>
-					<div class="gardener-profile-info">Profile Information: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>-->
-			<div>
-			<div id="contact-information">
-			<i  class="fa fa-envelope-o message-icon fa-4x"></i>
-			<div>
-				<a>www.bill-jackson.com</a>
-				<br>
-				00447700000000
-				<br>
-				bill@bill-jackson.com
-			</div>
-			</div>
-			<div id="average-rating">
-			<i  class="fa fa-star fa-4x"></i>
-			<div>
-				5 stars from 100 users
-			</div>
-			</div>
-			<div id="gardeners-photos">
-				<i  class="fa fa-picture-o fa-4x"></i>
-				<br>
-				Photos
-			</div>
-			<div id="gardeners-calendar">
-				<i  class="fa fa-calendar fa-4x"></i>
-				<br>
-				Availability
-			</div>
-			
-			<div id="gardener-wall">
-				<b>Wall</b><br>
-				Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua.
-			</div>
-		</div>
-		<div class="container">
-			<ul class="nav nav-tabs" role="tablist">
-				<li role="presentation" class="active">
-					<a href="#">Reviews</a>
-				</li>
-				<li role="presentation">
-					<a href="#">Notifications</a>
-				</li>
-			</ul>
-			<div class="customer-block">
-				<div class="gardener-photo">
-					<img src="img/customer.png" style="width:80px; height:80px"></img>
+
+			<div class="container">
+				<img class="profile-photo" src="img/gardener.png" style="width:100px; height:100px">
+				<h1 class="gardener-profile-name">Bill Jackson</h1>
+				<div class="gardener-services-list">
+					Lawn Mowing, Hedge Cutting <br> London, UK
 				</div>
-				<div id="name-and-info">
-					<b class="gardener-name">Evana Smith</b>
-					<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+				<!-- <b class="gardener-name">Bill Jackson</b>
+						<div class="gardener-profile-info">Profile Information: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>-->
+				<div>
+				<div id="contact-information">
+				<i  class="fa fa-envelope-o message-icon fa-4x"></i>
+				<div>
+					<a>www.bill-jackson.com</a>
+					<br>
+					00447700000000
+					<br>
+					bill@bill-jackson.com
 				</div>
-				<div id="ratings-list">
-					<b class="ratings-title">Rating</b>
-					<br><br>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
+				</div>
+				<div id="average-rating">
+				<i  class="fa fa-star fa-4x"></i>
+				<div>
+					5 stars from 100 users
+				</div>
+				</div>
+				<div id="gardeners-photos">
+					<i  class="fa fa-picture-o fa-4x"></i>
+					<br>
+					Photos
+				</div>
+				<div id="gardeners-calendar">
+					<i  class="fa fa-calendar fa-4x"></i>
+					<br>
+					Availability
+				</div>
+				
+				<div id="gardener-wall">
+					<b>Wall</b><br>
+					Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua.
 				</div>
 			</div>
-			<div class="customer-block">
-				<div class="gardener-photo">
-					<img src="img/customer2.png" style="width:80px; height:80px"></img>
+			<div class="container">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#">Reviews</a>
+					</li>
+					<li role="presentation">
+						<a href="#">Notifications</a>
+					</li>
+				</ul>
+				<div class="customer-block">
+					<div class="gardener-photo">
+						<img src="img/customer.png" style="width:80px; height:80px"></img>
+					</div>
+					<div id="name-and-info">
+						<b class="gardener-name">Evana Smith</b>
+						<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+					</div>
+					<div id="ratings-list">
+						<b class="ratings-title">Rating</b>
+						<br><br>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+					</div>
 				</div>
-				<div id="name-and-info">
-					<b class="gardener-name">Lauren Beckinsale</b>
-					<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+				<div class="customer-block">
+					<div class="gardener-photo">
+						<img src="img/customer2.png" style="width:80px; height:80px"></img>
+					</div>
+					<div id="name-and-info">
+						<b class="gardener-name">Lauren Beckinsale</b>
+						<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+					</div>
+					<div id="ratings-list">
+						<b class="ratings-title">Rating</b>
+						<br><br>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+					</div>
 				</div>
-				<div id="ratings-list">
-					<b class="ratings-title">Rating</b>
-					<br><br>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-				</div>
-			</div>
-			<div class="customer-block">
-				<div class="gardener-photo">
-					<img src="img/customer3.png" style="width:80px; height:80px"></img>
-				</div>
-				<div id="name-and-info">
-					<b class="gardener-name">James Bucket</b>
-					<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
-				</div>
-				<div id="ratings-list">
-					<b class="ratings-title">Rating</b>
-					<br><br>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
-					<i class="star fa fa-star fa-1x"></i>
+				<div class="customer-block">
+					<div class="gardener-photo">
+						<img src="img/customer3.png" style="width:80px; height:80px"></img>
+					</div>
+					<div id="name-and-info">
+						<b class="gardener-name">James Bucket</b>
+						<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+					</div>
+					<div id="ratings-list">
+						<b class="ratings-title">Rating</b>
+						<br><br>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+						<i class="star fa fa-star fa-1x"></i>
+					</div>
 				</div>
 			</div>
 			

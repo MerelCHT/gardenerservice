@@ -129,8 +129,12 @@ body.search .searchbar{
     padding: 0;   
 }
 
-.customer{
-    text-align: center;
+.profile{
+   margin-left: 10%;
+}
+
+.profile .searchbar{
+    padding: 0;
 }
 
 .unsuccessful{
