@@ -339,6 +339,11 @@ h1 {
     float: left;
 }
 
+#report-review{
+    margin-top: 3%;
+    font-size: 20px;
+    color: #DC143C;
+}
 
 .one_half {width:50%; display: block; float:left;}
 .one_half.last {width:45%; margin-left:5%;}
