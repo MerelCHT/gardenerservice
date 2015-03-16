@@ -120,6 +120,27 @@ input[type=password]{
     color: #000000;
 }
 
+.edit input[type=text]{
+    color: #000000;
+    padding: 0;
+    margin-bottom: 1%;
+    width: 250px;
+}
+
+.edit{
+    border-spacing: 1em;
+    margin-left: 5%;
+}
+
+.edit #contact-information.gardener{
+    margin-top: 10%;
+}
+
+.edit #gardeners-calendar{
+    margin-top: -20%;
+    margin-right: 50%;
+}
+
 body.homepage{
     background-image: url(http://i103.photobucket.com/albums/m133/Merel_Theisen/english-garden_zpsnkzctbpw.jpg) !important;
     background-repeat: no-repeat;
