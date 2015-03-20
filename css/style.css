@@ -137,8 +137,35 @@ input[type=password]{
 }
 
 .edit #gardeners-calendar{
-    margin-top: -38%;
+    margin-top: -17%;
+    margin-right: 20%;
 }
+
+.edit-account input[type=text]{
+    color: #000000;
+    padding: 0;
+    margin-bottom: 1%;
+    width: 250px;
+}
+
+.edit-account{
+    border-spacing: 1em;
+    margin-left: 5%;
+}
+
+.edit-account img.profile-photo{
+    float: right;
+    margin-right: 30%;
+}
+
+.edit-profile-photo{
+    float: right;
+    margin-right: -50%;
+}
+
+
+
+
 
 body.homepage{
     background-image: url(http://i103.photobucket.com/albums/m133/Merel_Theisen/english-garden_zpsnkzctbpw.jpg) !important;
@@ -251,7 +278,7 @@ body.search .searchbar{
 }
 
 #gardeners-calendar{
-    margin-right: 20%;
+    margin-right: 5%;
     margin-top: -6%;
     float: right;
 }
