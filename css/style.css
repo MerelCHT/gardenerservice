@@ -449,3 +449,11 @@ h1 {
 .user_register input[type="checkbox"]+label {float:left;}
 
 .user_register .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+
+#review-box {
+    width: 500px;
+}
+
+#write-a-review {
+    
+}
