@@ -454,6 +454,28 @@ h1 {
     width: 500px;
 }
 
-#write-a-review {
-    
+#write-a-review, #pencil-review {
+    float: left;
+}
+
+#review-button {
+    margin-left: 20px;
+}
+
+.rating-cancel {
+    visibility: hidden;
+}
+
+.star-rating, #review-textarea {
+    float: left;
+}
+
+.star-rating {
+    margin-top: 10px;
+}
+
+#send-review {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
 }
