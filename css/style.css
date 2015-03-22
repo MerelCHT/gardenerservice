@@ -274,7 +274,21 @@ body.search .searchbar{
 }
 
 #gardeners-photos{
+    position: relative;
+    float: left;
+}
 
+#bookmark-gardener {
+    position: relative;
+    float: left;
+    margin-left: 10%;
+}
+
+#success {
+    position: relative;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
 }
 
 #gardeners-calendar{

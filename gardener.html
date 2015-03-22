@@ -153,7 +153,14 @@
 					<br>
 					Photos
 				</div>
+				<div style="cursor:pointer" id="bookmark-gardener">
+					<i class="fa fa-bookmark fa-4x"></i>
+					<br>
+					Bookmark
+				</div>
+				<div id= "success"></div>
 			</div>
+			<br><br>
 			<div class="container">
 				<ul class="nav nav-tabs" role="tablist">
 					<li style="cursor:pointer" id="reviews-tab" role="presentation" class="active">
@@ -296,7 +303,9 @@
 							$("div#review-insert").replaceWith("<div id='new-review' class='customer-review' id='review-insert'></div>");
 							$("#new-review").append(review);
 						});
-
+						$("#bookmark-gardener").click(function(){
+							$("#success").append("<div class='alert alert-success' role='alert'>This gardener profile has been added to your bookmarks.</div>");
+						});
 					});
 				</script>
 			</div>
