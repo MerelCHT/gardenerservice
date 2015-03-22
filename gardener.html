@@ -156,11 +156,13 @@
 			</div>
 			<div class="container">
 				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active">
-						<a href="#">Reviews</a>
+					<li style="cursor:pointer" id="reviews-tab" role="presentation" class="active">
+						<a>Reviews</a>
 					</li>
-					<li role="presentation">
-						<a href="#">Notifications</a>
+					<li style="cursor:pointer" id="notifications-tab" role="presentation">
+						<a>Notifications
+							<span class="badge">1</span>
+						</a>
 					</li>
 				</ul>
 				<div class="customer-block">
@@ -278,6 +280,14 @@
 							$('#review-textarea').show();
 							$('.star-rating').show();
 							$('#send-review').show();
+						});
+						$('#reviews-tab').click(function(){
+							$('#notifications-tab').removeClass('active');
+							$('#reviews-tab').addClass('active');
+						});
+						$('#notifications-tab').click(function(){
+							$('#reviews-tab').removeClass('active');
+							$('#notifications-tab').addClass('active');
 						});
 						$('#send-review').click(function(){
 							var review = $('#review-textarea').val();

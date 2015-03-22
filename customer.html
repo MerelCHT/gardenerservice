@@ -53,19 +53,47 @@
 			</div>
 			<div class="container">
 				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active">
-						<a href="#">Bookmarks</a>
+					<li style="cursor:pointer" id="bookmarks-tab" role="presentation" class="active">
+						<a>Bookmarks</a>
 					</li>
-					<li role="presentation">
-						<a href="#">Browse History</a>
+					<li style="cursor:pointer" id="history-tab" role="presentation">
+						<a>Browse History</a>
 					</li>
-					<li role="presentation">
-						<a href="#">Reviews History</a>
+					<li style="cursor:pointer" id="reviews-tab" role="presentation">
+						<a>Reviews History</a>
 					</li>
-					<li role="presentation">
-						<a href="#">Inquiries</a>
+					<li style="cursor:pointer" id="inquiries-tab" role="presentation">
+						<a>Inquiries</a>
 					</li>
 				</ul>
+				<script>
+					$(document).ready(function() {
+						$('#reviews-tab').click(function(){
+							$('#bookmarks-tab').removeClass('active');
+							$('#history-tab').removeClass('active');
+							$('#inquiries-tab').removeClass('active');
+							$('#reviews-tab').addClass('active');
+						});
+						$('#bookmarks-tab').click(function(){
+							$('#reviews-tab').removeClass('active');
+							$('#history-tab').removeClass('active');
+							$('#inquiries-tab').removeClass('active');
+							$('#bookmarks-tab').addClass('active');
+						});
+						$('#history-tab').click(function(){
+							$('#reviews-tab').removeClass('active');
+							$('#history-tab').addClass('active');
+							$('#inquiries-tab').removeClass('active');
+							$('#bookmarks-tab').removeClass('active');
+						});
+						$('#inquiries-tab').click(function(){
+							$('#reviews-tab').removeClass('active');
+							$('#inquiries-tab').addClass('active');
+							$('#history-tab').removeClass('active');
+							$('#bookmarks-tab').removeClass('active');
+						});
+					});
+				</script>
 				<div class="gardener-block">
 					<div class="gardener-photo">
 						<img src="img/gardener.png" style="width:80px; height:80px"></img>
