@@ -62,17 +62,18 @@
 					<li style="cursor:pointer" id="reviews-tab" role="presentation">
 						<a>Reviews History</a>
 					</li>
-					<li style="cursor:pointer" id="inquiries-tab" role="presentation">
-						<a>Inquiries</a>
+					<li style="cursor:pointer" id="enquiries-tab" role="presentation">
+						<a>Enquiries</a>
 					</li>
 				</ul>
 				<script>
 					$(document).ready(function() {
 						$('.reviews-history').hide();
+						$('.enquiry-forms').hide();
 						$('#reviews-tab').click(function(){
 							$('#bookmarks-tab').removeClass('active');
 							$('#history-tab').removeClass('active');
-							$('#inquiries-tab').removeClass('active');
+							$('#enquiries-tab').removeClass('active');
 							$('#reviews-tab').addClass('active');
 							$('.gardener-block').hide();
 							$('#reviews-history').show();
@@ -80,23 +81,25 @@
 						$('#bookmarks-tab').click(function(){
 							$('#reviews-tab').removeClass('active');
 							$('#history-tab').removeClass('active');
-							$('#inquiries-tab').removeClass('active');
+							$('#enquiries-tab').removeClass('active');
 							$('#bookmarks-tab').addClass('active');
 						});
 						$('#history-tab').click(function(){
 							$('#reviews-tab').removeClass('active');
 							$('#history-tab').addClass('active');
-							$('#inquiries-tab').removeClass('active');
+							$('#enquiries-tab').removeClass('active');
 							$('#bookmarks-tab').removeClass('active');
 							$('#img1').replaceWith("<img id='1' src='img/gardener4.png' style='width:80px; height:80px'>");
 							$('#img2').replaceWith("<img id='2' src='img/gardener.png' style='width:80px; height:80px'>");
 							$('#img4').replaceWith("<img id='4' src='img/gardener2.png' style='width:80px; height:80px'>");
 						});
-						$('#inquiries-tab').click(function(){
+						$('#enquiries-tab').click(function(){
 							$('#reviews-tab').removeClass('active');
-							$('#inquiries-tab').addClass('active');
+							$('#enquiries-tab').addClass('active');
 							$('#history-tab').removeClass('active');
 							$('#bookmarks-tab').removeClass('active');
+							$('.enquiry-forms').show();
+							$('#reviews-history').hide();
 						});
 					});
 				</script>
@@ -189,7 +192,7 @@
 					<div class="review block">
 						<div id="name-and-info">
 							<b class="gardener-name">Review</b>
-							<div class="gardener-profile-info">Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+							<div class="gardener-profile-info"><br>Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
 						</div>
 						<div id="ratings-list">
 							<b class="ratings-title">Rating</b>
@@ -204,6 +207,40 @@
 						<div class="gardener-photo">
 							<b class="gardener-name" style="margin-right: 10px;">Bill Jackson</b>
 							<img id="img1" src="img/gardener.png" style="width:80px; height:80px"></img>
+						</div>
+					</div>
+				</div>
+				<!-- Enquiry forms sent -->
+				<div class="enquiry-forms">
+					<div class="review block">
+						<div id="name-and-info">
+							<b class="gardener-name">Enquiries</b>
+							<div class="gardener-profile-info">Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+						</div>
+						<div id="ratings-list">
+							<b class="ratings-title">Details provided</b>
+							<br><div style="margin-top: 10px;">
+							Email: evana@evana-smith.com<br>
+							Mobile Number: 00447500000000 </div>
+						</div>
+						<div class="gardener-photo">
+							<b class="gardener-name" style="margin-right: 10px;">Sent to<br>Bill Jackson</b>
+							<img id="img1" src="img/gardener.png" style="width:80px; height:80px"></img>
+						</div>
+					</div>
+					<div class="review block">
+						<div id="name-and-info">
+							<div class="gardener-profile-info">Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+						</div>
+						<div id="ratings-list">
+							<br>
+							Email: evana@evana-smith.com<br>
+							Mobile Number: 00447500000000
+						</div>
+						<div class="gardener-photo">
+							<br>
+							<b class="gardener-name" style="margin-right: 10px;">Sent to<br>Emily<br>Thompson</b>
+							<img id="img3" src="img/gardener3.png" style="width:80px; height:80px"></img>
 						</div>
 					</div>
 				</div>

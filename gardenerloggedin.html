@@ -148,74 +148,97 @@
 			</div>
 			<div class="container">
 				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active">
-						<a href="#">Reviews</a>
+					<li style="cursor:pointer" id="reviews-tab" role="presentation" class="active">
+						<a>Reviews</a>
 					</li>
-					<li role="presentation">
-						<a href="#">Notifications</a>
+					<li style="cursor:pointer" id="notifications-tab" role="presentation">
+						<a>Notifications <span id="notified" class="badge">1</span></a>
 					</li>
+					<script>
+					$(document).ready(function() {
+					$('#enquiry-form').hide();
+						$('#reviews-tab').click(function(){
+							$('#notifications-tab').removeClass('active');
+							$('#reviews-tab').addClass('active');
+							$('#customer-reviews').show();
+							$('#enquiry-form').hide();
+						});
+						$('#notifications-tab').click(function(){
+							$('#notifications-tab').addClass('active');
+							$('#reviews-tab').removeClass('active');
+							$('#customer-reviews').hide();
+							$('#notified').hide();
+							$('#enquiry-form').show();
+						});
+					});
+					</script>
 				</ul>
-				<div class="customer-block">
-					<div class="gardener-photo">
-						<img src="img/customer.png" style="width:80px; height:80px"></img>
-					</div>
-					<div id="name-and-info">
-						<b class="gardener-name">Evana Smith</b>
-						<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
-					</div>
-					<div id="ratings-list">
-						<b class="ratings-title">Rating</b>
-						<br><br>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-					</div>
-					<div id="report-review">
-						<a href="reportreview.html"><i class="fa fa-minus-circle fa-1x" id="icon"></i> Report review</a>
-					</div>
+				<div id="enquiry-form">
+					An enquiry form has been sent to your email.
 				</div>
-				<div class="customer-block">
-					<div class="gardener-photo">
-						<img src="img/customer2.png" style="width:80px; height:80px"></img>
+				<div id="customer-reviews">
+					<div class="customer-block">
+						<div class="gardener-photo">
+							<img src="img/customer.png" style="width:80px; height:80px"></img>
+						</div>
+						<div id="name-and-info">
+							<b class="gardener-name">Evana Smith</b>
+							<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+						</div>
+						<div id="ratings-list">
+							<b class="ratings-title">Rating</b>
+							<br><br>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+						</div>
+						<div id="report-review">
+							<a href="reportreview.html"><i class="fa fa-minus-circle fa-1x" id="icon"></i> Report review</a>
+						</div>
 					</div>
-					<div id="name-and-info">
-						<b class="gardener-name">Lauren Beckinsale</b>
-						<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+					<div class="customer-block">
+						<div class="gardener-photo">
+							<img src="img/customer2.png" style="width:80px; height:80px"></img>
+						</div>
+						<div id="name-and-info">
+							<b class="gardener-name">Lauren Beckinsale</b>
+							<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+						</div>
+						<div id="ratings-list">
+							<b class="ratings-title">Rating</b>
+							<br><br>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+						</div>
+						<div id="report-review">
+							<i class="fa fa-minus-circle fa-1x" id="icon"></i> Report review
+						</div>
 					</div>
-					<div id="ratings-list">
-						<b class="ratings-title">Rating</b>
-						<br><br>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-					</div>
-					<div id="report-review">
-						<i class="fa fa-minus-circle fa-1x" id="icon"></i> Report review
-					</div>
-				</div>
-				<div class="customer-block">
-					<div class="gardener-photo">
-						<img src="img/customer3.png" style="width:80px; height:80px"></img>
-					</div>
-					<div id="name-and-info">
-						<b class="gardener-name">James Bucket</b>
-						<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
-					</div>
-					<div id="ratings-list">
-						<b class="ratings-title">Rating</b>
-						<br><br>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-						<i class="star fa fa-star fa-1x"></i>
-					</div>
-					<div id="report-review">
-						<i class="fa fa-minus-circle fa-1x" id="icon"></i> Report review
+					<div class="customer-block">
+						<div class="gardener-photo">
+							<img src="img/customer3.png" style="width:80px; height:80px"></img>
+						</div>
+						<div id="name-and-info">
+							<b class="gardener-name">James Bucket</b>
+							<div class="customer-review">Review: Lorem ipsum dolor 	sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 	labore et dolore magna aliqua. </div>
+						</div>
+						<div id="ratings-list">
+							<b class="ratings-title">Rating</b>
+							<br><br>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+							<i class="star fa fa-star fa-1x"></i>
+						</div>
+						<div id="report-review">
+							<i class="fa fa-minus-circle fa-1x" id="icon"></i> Report review
+						</div>
 					</div>
 				</div>
 			</div>
